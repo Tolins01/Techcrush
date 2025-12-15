@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.active{
+    border:1px solid  red;
+}
+
+.age-year,
+.age-month, 
+.age-day{
+    font-family:"Manufacturing","Roboto","specimen","Poppins-ExtraBoldItalic", sans-serif;
+}
+/* .year{
+    font-family:"Poppins-ExtraBoldItalic",Georgia;  
+} */
+
+
+.valid-date,
+.past,
+.valid-day,
+.valid-month,
+.required{
+    display: none;
+}
+
+.valid-date-active,
+.past-active,
+.valid-day-active,
+.valid-month-active,
+.required-active{
+   display: block;
+   color:rgb(255, 94, 94);
+   margin-top: 3px;
+   font-size: 5px;
+   font-family: "poppins", sans-serif;
+   font-style: italic;
+}
+
+
+
+

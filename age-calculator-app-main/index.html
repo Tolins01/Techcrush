@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Age calculator app</title>
+  <link rel="stylesheet" href="calc.css">
+</head>
+<body class="body h-screen py-60 bg-[#dbdbdbff] flex items-center justify-center">
+  <div class="container w-[18rem] md:w-[23rem] border-white-200 px-6 py-6  pt-6 mt-10 justify-center items-center bg-white flex-col border-radius-4xl rounded-ee-[40px] md:rounded-ee-[80px] rounded-ss-[10px] rounded-se-[10px] rounded-es-[10px]">
+  <div class="flex relative border-gray-300 border-b  self-start pb-6 mb-4">
+    
+    <div class="flex flex-col pb-2">
+      <label class="text-[6px] tracking-widest font-bold text-gray-500 pb-1">DAY</label>
+      <input id="day" class=" input w-16 md:w-20 border-gray-300 rounded p-1 outline-gray-100 pl-1  text-sm border font-bold" type="text" maxlength="2" placeholder="DD" required> 
+      <span><h2 class="valid-date  text-[10px] tracking-widest  font-bold text-gray-500  pb-1">Must be a valid date</h2></span>
+      <span><h2 class="valid-day text-[10px] tracking-widest  font-bold text-gray-500  pb-1">Must be a valid day</h2></span>
+      <span><h2 class="required day text-[10px] tracking-widest  font-bold text-gray-500  pb-1">This field is required</h2></span>
+    </div>
+   
+    <div class="flex flex-col font-bold pl-3">
+      <label class="text-[6px] tracking-widest text-gray-500 pb-1">MONTH</label>
+      <input id="month" name="month" class="month input w-16 md:w-20 border-gray-300 rounded  p-1 outline-gray-100 pl-1 text-sm border font-bold" type ="text" maxlength="2" placeholder="MM" name='year' required> 
+      <span><h2 class="valid-month text-[10px] tracking-widest  font-bold text-gray-500  pb-1">Must be a valid month</h2></span>
+      <span><h2 class="required month text-[10px] tracking-widest  font-bold text-gray-500  pb-1">This field is required</h2></span>
+    </div>
+    
+    <div class="flex flex-col pl-3">
+      <label class="text-[6px] line  tracking-widest  text-gray-500   font-bold pb-1"> YEAR</label>
+      <input id="year" class="year w-18 md:w-22 border-gray-300 rounded p-1 outline-gray-100 pl-1 text-sm border font-bold"  maxlength = "4" placeholder="YYYY" required> 
+      <span><h2 class="past  error-year text-[10px] tracking-widest  font-bold text-gray-500  pb-1">Must be in the past</h2></span>
+      <span><h2  class="required year required-2 text-[10px] tracking-widest font-bold text-gray-500  pb-1">This field is required</h2></span>
+    </div>
+    <button class="button flex bg-violet-600 hover:bg-black hover:cursor-pointer w-8 h-8 rounded-full px-2 bottom-[-15px] md:left-72 left-25 absolute" type="submit"><img class="w-4" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1764629457/icon-arrow_o6dman.svg" alt="arrow-submit"></button>
+  </div>
+ 
+  <div class="flex flex-col pt-4 mb-2">
+    <div class="flex"><span class="age-year italic md:pt-[5px] text-5xl font-[Poppins] font-bold text-violet-700">--</span> <div class="text-4xl md:text-[3em] pl-3 year italic font-[Poppins] font-bold">years</div> </div>
+    <div class="flex"><span class="age-month italic md:pt-[5px] text-5xl  font-[Poppins]  font-bold  text-violet-700">--</span> <div class="text-4xl md:text-[3em] pl-3 italic font-[Poppins] font-bold">months</div></div>
+    <div class="flex"><span class="age-day italic  md:pt-[5px]  text-5xl  font-[Poppins]  font-bold text-violet-700">--</span> <div class="text-4xl pl-3 md:text-[3em] font-[Poppins] italic font-bold">days</div></div>
+  </div>
+ </div>
+<script src="calc.js"></script>
+</body>
+</html>

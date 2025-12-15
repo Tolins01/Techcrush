@@ -1,0 +1,17 @@
+#btn {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+#btn.active {
+  background-color: green;
+}
+
+#btn.primary {
+  background-color: blue;
+}
+
+#btn.large {
+  padding: 20px 40px;
+  font-size: 20px;
+}

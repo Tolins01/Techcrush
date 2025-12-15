@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+  </head>
+  <body
+    class="flex justify-center items-center min-h-screen bg-[#141519] text-white"
+  >
+    <!-- Rating Container -->
+    <div
+      class="max-w-md bg-[#1b222c] p-8 rounded-lg flex flex-col justify-between space-y-6"
+      id="ratingCard"
+    >
+      <div
+        class="bg-[#262f38] w-12 h-12 flex justify-center items-center rounded-full"
+      >
+        <img src="/icon-star.svg" alt="star-icon" />
+      </div>
+
+      <h2 class="text-2xl font-bold">How did we do ?</h2>
+      <p class="text-sm leading-relaxed text-[#969eac]">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <!-- ranking section -->
+      <div class="flex justify-between">
+        <div
+          class="bg-[#262f38] text-[#969eac] w-12 h-12 flex justify-center items-center rounded-full cursor-pointer font-bold hover:bg-[#fc7614] hover:text-white transition-all duration-200"
+        >
+          <button id="rating1">1</button>
+        </div>
+        <div
+          class="bg-[#262f38] text-[#969eac] w-12 h-12 flex justify-center items-center rounded-full cursor-pointer font-bold hover:bg-[#fc7614] hover:text-white transition-all duration-200"
+        >
+          <button id="rating2">2</button>
+        </div>
+        <div
+          class="bg-[#262f38] text-[#969eac] w-12 h-12 flex justify-center items-center rounded-full cursor-pointer font-bold hover:bg-[#fc7614] hover:text-white transition-all duration-200"
+        >
+          <button id="rating3">3</button>
+        </div>
+        <div
+          class="bg-[#262f38] text-[#969eac] w-12 h-12 flex justify-center items-center rounded-full cursor-pointer font-bold hover:bg-[#fc7614] hover:text-white transition-all duration-200"
+        >
+          <button id="rating4">4</button>
+        </div>
+        <div
+          class="bg-[#262f38] text-[#969eac] w-12 h-12 flex justify-center items-center rounded-full cursor-pointer font-bold hover:bg-[#fc7614] hover:text-white transition-all duration-200"
+        >
+          <button id="rating5">5</button>
+        </div>
+      </div>
+      <button
+        class="bg-[#fc7614] font-bold text-sm tracking-widest rounded-full py-3 mt-2 hover:bg-white hover:text-[#fc7614] transition-all duration-200 cursor-pointer"
+        id="submitButton"
+      >
+        SUBMIT
+      </button>
+    </div>
+
+    <!-- Thank you container -->
+
+    <div
+      class="flex flex-col justify-between bg-[#1b222c] p-8 space-y-6 text-center items-center rounded-lg max-w-md w-full hidden"
+      id="thankYouCard"
+    >
+      <img
+        src="/illustration-thank-you.svg"
+        alt="thankyou-icon"
+        class="w-[120px] h-[100px]"
+      />
+      <div class="bg-[#262f38] px-5 py-2 rounded-full">
+        <p class="text-[#fc7614] text-sm">
+          You selected <span id="ratingDisplay">0</span> out of 5
+        </p>
+      </div>
+      <h2 class="text-2xl font-bold">Thank you!</h2>
+      <p class="text-[#969eac] text-sm leading-relaxed">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

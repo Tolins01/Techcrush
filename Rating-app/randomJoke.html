@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+    @layer utilities {
+    @keyframes rotate360 {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .animate-rotate4s {
+      animation: rotate360 3s linear infinite;
+    }
+  }
+</style>
+</head>
+<body class="flex sd:w-full bg-[#141519] justify-center items-center h-screen py-4 px-20">
+       <!-- Rating UI -->
+        <div class="flex bg-[#1b222c] rounded-4xl justify-between items-center w-[22em] py-10 px-10 flex-col"
+        id="ratingCard">
+            <span class="flex self-center text-5xl mb-5">🤣</span>
+            <div class="flex-col items-center">
+            <h1 class="flex text-2xl pb-3 justify-center text-white ">
+                Really Funny jokes
+            </h1>
+            <p class="flex flex-col text-gray-400 text-xs leading-6 px-2" id="joke">
+            </p>
+            </div>
+            <label for="click" class="text-white my-5">Get new jokes</label>
+            <button id="submitButton" class="bg-[#fc7614] tracking-wider font-bold text-sm block py-2 w-65 rounded-4xl hover:bg-white hover:text-[#fc7614] hover:pointer transition-all duration-200 cursor-pointer" type="submit">Click me</button>
+       </div>
+        <script src="randJoke.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+*{
+    font-family:'specimen', 'DM+Sans',Arial, sans-serif ;
+    margin: 0;
+     padding: 0;   
+    box-sizing: border-box;
+}
+
+
+
+.grid-container{
+   padding: 3rem 2rem;
+   display: grid;
+   align-content: center;
+   justify-content: center;
+   grid-auto-columns: 250px; 
+   grid-auto-rows:200px;
+   gap: 1em;  
+    
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.2em;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.flex-item{
+     width: 100%;
+    box-sizing: border-box;
+     align-items: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+img{
+    display: flex;
+    width: 13rem;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+.item-3 h2{
+    font-size: 1.6em;
+    margin-right: 3em;
+    margin-bottom: 12px;
+
+}
+
+.item-3 img{
+    margin-top: 1em;
+    clip-path: inset(0 0 62px 0);
+}
+
+.item-1{
+    background-color: hsl(256, 67%, 59%);
+    /* grid-area: "item-1"; */
+    color: hsl(0, 0%, 100%) ;
+    grid-column: 2/4;
+    height: 350px;
+}
+
+.item-1 span{
+    color:gold;
+}
+
+.item-2{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    margin-top: 10em;
+    place-items: center;
+    background-color: hsl(31, 66%, 93%)
+}
+
+.item-3{
+     background-color: hsl(39, 100%, 71%);
+     margin-top: 10em;
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+
+.item-4 .flex-item img{
+    clip-path: inset(0 70px 0 0);
+    width: 17rem;
+    padding-right: 0;
+}
+.item-4 h3{
+    font-size: 16px;
+}
+
+.item-4 h2{
+     font-size: 26px;
+}
+.item-4 .flex-item{
+    padding-left: 2em;
+    align-items: flex-start;
+    padding-right: 0;
+}
+
+.item-4{
+     background-color: hsl(256, 67%, 79%);
+     grid-column: 4/5;
+     grid-row: 1/4;
+     padding-right: 0;
+     /* grid-area: "item-4"; */
+}
+
+.item-5{
+    background-color: hsl(256, 67%, 59%);
+    grid-column: 3/5;
+    grid-row: 4/5;
+    color: hsl(0, 0%, 100%);
+}
+
+.flex-5{
+    flex-direction: row;
+    
+}
+
+.flex-5 h2{
+    padding: 1em;
+    font-size: 2em;
+}
+
+.item-6{
+   background-color: hsl(31, 66%, 93%);
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.percent{
+    align-self: start;
+    padding-left:1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+ .item-7{
+    background-color: hsl(39, 57%, 85%);
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.item-8{
+    background-color: hsl(39, 100%, 71%);
+    grid-column: 1/2;
+    grid-row:3/5;
+} 
+
+
+@media (max-width:645px){
+    .grid-container{
+        padding: 1em;
+        grid-auto-rows:1fr;
+    }
+    img{
+       width: 25rem
+    }
+    .grid-item{
+       padding: 1em;
+       align-items: center;
+       justify-content: space-evenly;
+        align-items: center;
+    }
+    h1{font-size:5em;}
+    h2{
+        font-size: 2em;
+        padding: 1em 1.5em;
+    }
+    .percent{
+          align-self: center;
+    }
+    .flex-item{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .item-1{
+        font-size: 0.5em;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        height: auto;
+    } 
+    .item-2{
+        margin-top: 0;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .item-3{
+        margin-top: 0;
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .item-3 .flex-item{
+        justify-content: center;
+        padding: 1em;
+    }
+    .item-3 h2 h3{
+        justify-content: center;
+        font-size: 2em;
+        padding: 2em;
+        margin: 0;
+    }
+    
+    .item-3 img{
+    clip-path: inset(0 0 0 0);
+    }
+
+    .item-4{
+        width: auto;
+        grid-column: 1/3;
+        padding-left: 0;
+        grid-row: 4/5;
+    }
+    .item-4 .flex-item{
+        padding: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-4 .flex-item h2{
+        padding:16px;
+    }
+    .item-4 h3{
+        padding-right:0;
+        text-align: center;
+        width: 70%;
+        padding: 10px 16px;
+        font-size: 1em;
+    }
+    .item-4 .flex-item img{
+         clip-path: inset(0 0 0 0);
+    }
+    .item-5{
+        grid-column: 1/3;
+        grid-row: 5/6;
+
+    }
+    .item-5 .flex-item{
+        flex-direction: column;
+    }
+    .item-6{
+
+        grid-column: 1/3;
+        grid-row:6/7;
+    
+    }
+    .item-7{
+        grid-column: 1/3;
+        grid-row: 7/8;
+    }
+    .item-8{
+        grid-column: 1/3;
+        grid-row: 8/9;
+    } 
+}

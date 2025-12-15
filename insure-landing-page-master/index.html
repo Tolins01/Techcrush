@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/DM+Serif+Display">
+ <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>Insure landing page</title>
+</head>
+<body class="flex h-screen flex-col w-full">
+  <header class="max-md:bg-[#2b272fff] flex w-full justify-between max-xl:px-15 max-md:px-0 px-35"> 
+    <div class="flex w-full max-md:flex-col">
+      <div class="flex w-full max-md:bg-white items-center max-md:justify-between">
+      <a class="w-20 max-md:ml-10 hover:cursor-pointer" href="index.html"><img  src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750902/logo_j4rv6v.svg" alt="logo"></a>
+      <nav id  ="hamburger" class= "hover:transition md:hidden max-md:mr-10 max-md:flex my-2 w-6 mt-2" ><img  src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750905/icon-hamburger_s1r7ia.svg" alt="hamburger"></nav>
+      <nav id  ="close" class="hover:transition hidden max-md:mr-10 my-2 w-6 mt-2" ><img  src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750905/icon-close_xcmvxa.svg" alt="hamburger"></nav>
+      </div>
+      <div id="navLinks" class="flex w-full font-bold max-md:bg-[#2b272fff] max-md:hidden max-md:flex-col gap-8  items-center max-md:pt-10 max-md:pb-0 py-2">
+      <span class="text-gray-400 tracking-widest text-[10px] hover:cursor-pointer max-md:ml-0 ml-auto hover:text-[#2d2640ff]">HOW WE WORK</span>
+      <span class="text-gray-400 tracking-widest text-[10px] hover:cursor-pointer hover:text-[#2d2640ff]">BLOG</span>
+      <span class="text-gray-400 tracking-widest  text-[10px] hover:cursor-pointer hover:text-[#2d2640ff]">ACCOUNT</span>
+      <button class="border flex
+       text-[10px] max-md:text-{14px} hover:cursor-pointer
+        hover:text-white hover:bg-[#2d2640ff] 
+        text-[#2d2640ff] border-[#2d2640ff] max-md:text-white transition
+        max-md:border-white max-md:justify-center max-md:w-80 max-md:active:bg-white max-md:active:text-[#2d2640ff] 
+        max-md:active:border-[#2d2640ff] max-md:active:cursor-pointer max-md:py-3 
+        px-3 py-1">VIEW PLANS
+      </button>
+        <div class="flex hidden max-md:flex">
+             <img class="w-3xl" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750903/bg-pattern-mobile-nav_p6evci.svg" alt=""> 
+        </div>
+      </div>
+    </div>
+  </header> 
+  <div class="max-md:block hidden">
+     <img class="w-3xl" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750901/image-intro-mobile_gn77lp.jpg" alt="Image-Intro">
+  </div>
+  <div class="flex w-full bg-[#2d2640ff] max-md:flex-col relative max-xl:px-15 py-15 px-35">
+    <div class="flex justify-between max-md:flex-col-reverse">
+    <div class="flex flex-col gap-8 max-lg:gap-4  max-md:text-center max-md:items-center">
+      <hr class="w-18 text-gray-400">
+      <h1 class="text-6xl max-lg:pr-100 max-md:pr-0 font-[DM_Serif_Display] max-md:text-4xl text-white">
+        Humanizing <br> your insurance.
+      </h1>
+      <p class="flex mr-115 max-md:mr-0 leading-6 text-3 text-gray-300 max-md:text-[14px]">
+       Get your life insurance coverage easier and faster. We blend our expertise
+       and technology to help you find the plan that’s right for you. Ensure you 
+       and your loved ones are protected.
+      </p>
+      <button class="border text-white hover:bg-white hover:cursor-pointer hover:text-[#2d2640ff] transition px-2 py-2 w-30">
+        View plans
+      </button>
+    </div>
+     <div class="flex overflow-hidden">
+        <img class="absolute max-md:relative w-100 max-lg:w-80 max-md:hidden  max-xl:right-15 max-md:inset-0 top-15 right-35" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750902/image-intro-desktop_c1sjaj.jpg" alt="Image-Intro">
+        <div class="max-md:hidden">
+          <img class="absolute w-70 top-[0] right-0 max-md:hidden" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750903/bg-pattern-intro-right-desktop_od6lih.svg" alt="Intro-right-desktop">
+          <img class="absolute w-30 bottom-[-200px] left-0 max-md:hidden" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750901/bg-pattern-intro-left-desktop_fp6z9v.svg" alt="Intro-left-desktop">
+        </div>
+      </div>
+      <div class="overflow-hidden hidden max-md:block">
+        <img class="absolute w-30 -bottom-30 right-0  hidden  max-md:block" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750903/bg-pattern-intro-right-mobile_ynr4e0.svg" alt="Intro-right-desktop">
+        <img class="absolute w-30 top-0 left-0  hidden  max-md:block" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750902/bg-pattern-intro-left-mobile_fwjpfa.svg" alt="Intro-left-desktop">
+      </div>
+      </div>
+  </div> 
+
+<div class="flex py-10 max-xl:px-10 px-35 py-10 gap-5 max-md:mt-10 mt-50 flex-col">
+    <div class="flex-col mb-4">
+    <hr class="w-18 max-md:mx-auto text-gray-400 mb-5">
+    <h2 class="text-[30px] font-[DM_Serif_Display] font-bold max-md:text-center bold"> We’re different</h2>
+    </div>
+    <div class="flex max-md:flex-col  justify-between gap-10">
+    <div class="display flex flex-col max-md:items-center gap-5">
+        <img class="w-10"  src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750906/icon-snappy-process_xitsus.svg" alt="icon-snappy-process">
+        <h3 class="text-5 font-bold  font-[DM_Serif_Display]  bold">
+          Snappy Process
+        </h3> 
+        <p class="text-[14px] max-md:text-center text-gray-400">
+        Our application process can be completed in minutes, not hours. Don’t get 
+        stuck filling in tedious forms.
+        </p>
+      </div>
+     
+      <div class="display flex flex-col max-md:items-center gap-5">
+        <img class="w-10" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750904/icon-affordable-prices_mqx0q3.svg" alt="icon-affordable-prices">
+        <h3 class="text-5 font-bold font-[DM_Serif_Display]  bold">
+           Affordable Prices
+        </h3> 
+        <p class="text-[14px] max-md:text-center text-gray-400">
+        We don’t want you worrying about high monthly costs. Our prices may be low, 
+        but we still offer the best coverage possible.
+        </p>
+      </div>
+
+      <div class="display flex flex-col max-md:items-center gap-5">
+        <img class="w-10" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750905/icon-people-first_biotid.svg" alt="icon-people-first">
+        <h3 class="text-5 font-bold font-[DM_Serif_Display] bold">
+        People First
+        </h3>
+        <p class="text-[14px] max-md:text-center text-gray-400">
+        Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+        sure you’re covered when you need it.
+        </p>
+      </div>
+      </div>
+  </div>
+  
+  <div class="flex max-md:justify-center max-md:flex-col gap-8 max-md:items-center 
+   overflow-hidden justify-between bg-[#2d2640ff] max-xl:mx-10 max-xl:py-15 mx-34 py-10 px-10 
+   items-center relative my-10">
+    <div class="flex">
+      <h2 class="text-4xl font-[DM_Serif_Display]  bold max-md:px-5 max-md:w-full max-md:text-center w-80 text-white">
+          Find out more about how we work
+        </h2>
+    </div>    
+    <div class="flex">
+        <button class="border transition z-10 bold text-white hover:bg-white hover:cursor-pointer hover:text-[#2d2640ff] px-4 max-lg:text-[24px] text-[12px] py-2">
+           How we work
+        </button>
+        <img class="absolute w-70 z-0 -right-10 top-0 max-xl:hidden override-hidden" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750899/bg-pattern-how-we-work-desktop_ycvkeu.svg" alt="pattern-how-we-work">
+         <img class="absolute w-80 z-0 -right-5 -top-10 hidden max-xl:block override-hidden" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750902/bg-pattern-how-we-work-mobile_ooz6am.svg" alt="pattern-how-we-work">
+    </div>    
+  </div>
+
+  <footer class="relative w-full bg-[#fafafaff] mt-10 max-xl:px-10 px-35 py-10 ">
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <img class="w-[32em] max-md:hidden -top-12 absolute" 
+           src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750902/bg-pattern-footer-desktop_brv67t.svg"
+           alt="footer-pattern">
+
+     <img class="w-l max-md:flex hidden top-0 absolute" 
+           src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750900/bg-pattern-footer-mobile_aqyacj.svg" 
+           alt="footer-pattern"> 
+  </div>
+  <div class="relative z-10 flex tracking-wider flex-col"> 
+    <div class="mb-6">
+      <div class="flex max-md:flex-col gap-5 max-sm:items-center max-md:items-center justify-between mb-5">
+        <div class="logo">
+          <img class="w-18" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750902/logo_j4rv6v.svg" alt="logo">
+        </div>
+
+        <div class="flex icons">
+          <img class="px-2 w-8 hover:cursor-pointer transition
+         hover:brightness-0 hover:contrast-100" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750905/icon-facebook_vibnst.svg">
+          <img class="px-2 w-8 hover:cursor-pointer transition
+         hover:brightness-0 hover:contrast-100" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750899/icon-twitter_nisp6b.svg">
+          <img class="px-2 w-8 hover:cursor-pointer transition
+         hover:brightness-0 hover:contrast-100" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750906/icon-pinterest_uczir8.svg">
+          <img class="px-2 w-8 hover:cursor-pointer transition
+         hover:brightness-0 hover:contrast-100" src="https://res.cloudinary.com/dbgowpxtw/image/upload/v1765750905/icon-instagram_ichicp.svg">
+        </div>
+      </div>
+
+      <hr class="w-full text-gray-300" />
+    </div>
+
+    <div class="flex text-[8px] font-bold lg:w-[105em] max-md:gap-3 max-md:flex-col max-md:items-center justify-between">
+
+    <div class="flex flex-col max-md:items-center gap-4">
+        <h3 class=" mb-2  font-[karla] font-bold text-gray-400">OUR COMPANY</h3> 
+        <a class="" href="./how-we-work">HOW WE WORK</a> 
+        <a class="" href="./why-insure">WHY INSURE?</a> 
+        <a class="" href="./view-plans">VIEW PLANS</a> 
+        <a class="" href="./reviews">REVIEWS</a> 
+      </div>
+      <div class="flex flex-col max-md:items-center gap-4">
+        <h3 class="mb-2 font-[karla] font-bold text-gray-400"> HELP ME</h3> 
+        <a class="" href="./faq">FAQ</a> 
+        <a class="" href="./terms">TERMS OF USE</a> 
+        <a class="" href="./privacy-policy">PRIVACY POLICY</a> 
+        <a class="" href="./cookies">COOKIES</a> 
+      </div>
+      <div class="flex flex-col max-md:items-center gap-4">
+        <h3 class=" mb-2 font-[karla] font-bold text-gray-400">CONTACT</h3> 
+        <a class="" href="./sales"> SALES</a> 
+        <a class="" href="./support">SUPPORT</a> 
+        <a class="" href="./live-chat">LIVE CHAT</a> 
+      </div>
+      <div class="flex flex-col max-md:items-center gap-4">
+        <h3 class="mb-2 font-bold font-[karla] text-gray-400">OTHERS</h3> 
+        <a class=""  href="./Careers">CAREERS</a> 
+        <a class="" href="./press">PRESS</a> 
+        <a class="" href="./licenses">LICENSES</a> 
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
+
+
